@@ -1,0 +1,11 @@
+version: '1'
+services:
+  tensorflow_jupyter:
+    build: .
+    ports:
+      - 8888:8888
+      - 6006:6006
+    volumes:
+      - ./notebook:/tf/tensorflow-raf
+    environment:
+      - JUPYTER_TOKEN=RAF
