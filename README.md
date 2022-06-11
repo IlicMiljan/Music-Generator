@@ -12,6 +12,8 @@ Primena Neuronskih Mreža za generisanje melodije.
 
 ## Dataset
 
+Dataset je sastavljen od MIDI muzičkih fajlova komponovanih na klaviru. Izvorni MIDI fajlovi nalaze se u folderu
+`dataset/midi`, dok se isparsirani dataset u XML formatu koji sadrži note nalazi u fajlu `/dataset/notes/parsed.data`.
 
 ---
 
@@ -20,7 +22,7 @@ Primena Neuronskih Mreža za generisanje melodije.
 **Sistemski Zahtevi**
 
 - **OS**: Windows / MacOS / Linux
-- **Storage**: ~2 GB
+- **Storage**: ~8 GB
 - **Software**: Docker
 
 **Instalacija**
@@ -40,11 +42,14 @@ dokumentaciji ispod odnose se relativno na `tensorflow-raf` folder, odnosno `/tf
 
 ## Izvorni Kod
 
-Izvorni kod nalazi se u fajlu `train.ipynb`.
+Kod korišćen za treniranje neurosnske mreže nalazi se u `train.ipynb`.
+
+Kod koji se koristi za generisanje mozičkih kompozicija nalazi se u `generate.ipynb`.
 
 ## Izlazne Datoteke
 
-Logovi se nalaze u folderu `logs`, dok se istrenirani modeli nalaze u folderu `models`.
+Logovi se nalaze u folderu `logs`, dok se istrenirani modeli i checkpoint-i nalaze u folderu `models`. 
+Izlazne datoteke generisanih kompozicija nalaze se u folderu `output`.
 
 
  
