@@ -6,7 +6,7 @@ Primena Neuronskih Mreža za generisanje melodije.
 
 **Programski jezik:** Python / Jupyter Notebook
 
-**Biblioteke:** TensorFlow
+**Biblioteke:** TensorFlow, Music21, NumPy
 
 ---
 
@@ -45,6 +45,12 @@ dokumentaciji ispod odnose se relativno na `tensorflow-raf` folder, odnosno `/tf
 Kod korišćen za treniranje neurosnske mreže nalazi se u `train.ipynb`.
 
 Kod koji se koristi za generisanje mozičkih kompozicija nalazi se u `generate.ipynb`.
+
+## Generisanje Melodije
+
+Melodija se može generisati otvaranjem `generate.ipynb` fajla i pokretanjem istog sa željenom konfiguracijom.
+Moguće je konfigurisati model koji treba koristiti, dužinu LSTM sekvence, broj nota koje treba generisati, kao i tempo
+melodije, odnosno razmak izmedju nota i akorda.
 
 ## Izlazne Datoteke
 
